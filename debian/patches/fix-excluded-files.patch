@@ -1,0 +1,9 @@
+Description: exclude examples from install
+Author: Yadd <yadd@debian.org>
+Forwarded: no
+Last-Update: 2021-11-16
+
+--- /dev/null
++++ b/.npmignore
+@@ -0,0 +1 @@
++example.*

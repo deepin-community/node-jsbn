@@ -1,0 +1,25 @@
+Source: node-jsbn
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-jsbn
+Vcs-Git: https://salsa.debian.org/js-team/node-jsbn.git
+Homepage: https://github.com/andyperlitch/jsbn
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-jsbn
+Architecture: all
+Depends: ${misc:Depends}
+Multi-Arch: foreign
+Provides: ${nodejs:Provides}
+Description: fast, portable implementation of large-number math in pure JS
+ The jsbn library is a fast, portable implementation of large-number math in
+ pure JavaScript, enabling public-key crypto and other applications on desktop
+ and mobile browsers.
+ .
+ Node.js is an event-based server-side JavaScript engine.
